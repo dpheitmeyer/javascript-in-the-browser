@@ -1,0 +1,82 @@
+body {
+    font-family: arial, helvetica, sans-serif;
+}
+
+header,
+footer,
+main {
+    padding: 0 1rem;
+}
+
+header {
+    font-size: 3rem;
+}
+
+footer {
+    margin-block-start: 2rem;
+    border-block-start: thin solid black;
+}
+
+li {
+    padding: 0.25rem;
+}
+
+li ul {
+    padding-top: 0.25rem;
+    text-decoration: none;
+}
+
+/* =================================
+   Styles for Conferences example
+   ================================= */
+ul.collapsible>li::marker {
+    color: rgb(100, 100, 100);
+    font-size: 0.9rem;
+    content: "▲";
+}
+
+ul.collapsible>li.collapsed::marker {
+    content: "▼";
+}
+
+li.collapsed ul {
+    display: none;
+}
+
+/* ================================= */
+
+
+/* =================================
+   Styles for Countries example
+   ================================= */
+table {
+    border-collapse: collapse;
+}
+
+th {
+    cursor: pointer;
+    background: #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th:hover {
+    background: #ccc;
+}
+
+td {
+    padding: 8px;
+}
+
+table tr {
+    border: thin solid black;
+}
+
+table td:nth-child(3) {
+    text-align: right;
+}
+table tbody tr:nth-child(even) {
+    background-color: #f0f0e5;
+}
+
+/* ================================= */
